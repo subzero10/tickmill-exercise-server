@@ -8,10 +8,9 @@
     "scripts": {
         "heroku-postbuild": "npm run build:prod && npm run migration:run",
         "build:prod": "tsc -p tsconfig.build.json",
-        "postbuild:prod": "copyfiles --up 1 src/**/*.json dist",
         "start:hmr": "node dist/main.hmr.ts",
         "start:dev": "ts-node src/main.ts",
-        "start:prod": "node dist/main.js",
+        "start:prod": "node src/main.js",
         "typeorm": "ts-node node_modules/typeorm/cli.js  -f ormconfig",
         "migration:run": "ts-node --transpile-only ./node_modules/typeorm/cli.js migration:run",
         "migration:generate": "yarn run typeorm migration:generate -d src/migrations -n",
