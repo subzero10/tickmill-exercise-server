@@ -11,7 +11,4 @@ module.exports = {
     namingStrategy: new SnakeNamingStrategy(),
     entities: ['src/modules/**/*.entity{.ts,.js}'],
     migrations: ['src/migrations/*{.ts,.js}'],
-    extra: {
-        ssl: process.env.NODE_ENV === 'production' ? {rejectUnauthorized: false} : false
-    }
 };
