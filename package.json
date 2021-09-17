@@ -7,7 +7,7 @@
     "license": "MIT",
     "scripts": {
         "build:prod": "tsc -p tsconfig.build.json",
-        "postbuild:prod": "copyfiles --up 1 src/**/*.json dist",
+        "postbuild:prod": "copyfiles --up 1 src/**/*.json dist && mv dist/src/* dist/ && rm dist/package.json",
         "start:hmr": "node dist/main.hmr.ts",
         "start:dev": "ts-node src/main.ts",
         "start:prod": "node dist/main.js",
@@ -56,6 +56,7 @@
         "lodash": "^4.17.21",
         "mime-types": "^2.1.31",
         "morgan": "^1.10.0",
+        "move-cli": "^1.2.1",
         "nats": "^1.4.12",
         "nestjs-i18n": "^8.1.1",
         "passport": "^0.4.1",
