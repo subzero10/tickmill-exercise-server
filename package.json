@@ -6,7 +6,7 @@
     "private": true,
     "license": "MIT",
     "scripts": {
-        "build": "npm run build:prod && npm run postbuild:prod && npm run migration:run",
+        "heroku-postbuild": "npm run build:prod && && npm run migration:run",
         "build:prod": "tsc -p tsconfig.build.json",
         "postbuild:prod": "copyfiles --up 1 src/**/*.json dist",
         "start:hmr": "node dist/main.hmr.ts",
