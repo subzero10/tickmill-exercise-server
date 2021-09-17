@@ -1,8 +1,8 @@
 {
-    "name": "awesome-nest-boilerplate",
-    "version": "7.0.1",
-    "description": "Awesome NestJS Boilerplate, Typescript, Postgres, TypeORM",
-    "author": "Narek Hakobyan <narek.hakobyan.07@gmail.com>",
+    "name": "tickmill-exercise-server",
+    "version": "1.0.0",
+    "description": "Tickmill Exercise Server (nestjs)",
+    "author": "Pangratios Cosma",
     "private": true,
     "license": "MIT",
     "scripts": {
