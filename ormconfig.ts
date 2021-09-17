@@ -12,6 +12,6 @@ module.exports = {
     entities: ['src/modules/**/*.entity{.ts,.js}'],
     migrations: ['src/migrations/*{.ts,.js}'],
     extra: {
-        ssl: process.env.NODE_ENV === 'production' ? {rejectUnauthorized: true} : false
+        ssl: process.env.NODE_ENV === 'production' ? {rejectUnauthorized: false} : false
     }
 };
